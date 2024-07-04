@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="27.505" tests="18" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-07-04T12:34:44" tests="0" file="cypress\e2e\cartFunctionality.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Shopping Cart Functionality" timestamp="2024-07-04T12:34:44" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Viewport: mobile" timestamp="2024-07-04T12:34:44" tests="6" time="13.257" failures="0">
+    <testcase name="Shopping Cart Functionality Viewport: mobile TC 1 Verify Adding Products to Cart" time="3.065" classname="TC 1 Verify Adding Products to Cart">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: mobile TC 2 Verify Product Details in Cart" time="1.617" classname="TC 2 Verify Product Details in Cart">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: mobile TC 3. Verify Removing Products from Cart" time="1.542" classname="TC 3. Verify Removing Products from Cart">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: mobile TC 4 Verify Cart Count Badge" time="1.452" classname="TC 4 Verify Cart Count Badge">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: mobile TC 5 Verify Checkout Process" time="1.046" classname="TC 5 Verify Checkout Process">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: mobile TC 6 Verify Returning to the List of Products from Cart" time="0.967" classname="TC 6 Verify Returning to the List of Products from Cart">
+    </testcase>
+  </testsuite>
+  <testsuite name="Viewport: tablet" timestamp="2024-07-04T12:34:58" tests="6" time="6.920" failures="0">
+    <testcase name="Shopping Cart Functionality Viewport: tablet TC 1 Verify Adding Products to Cart" time="1.039" classname="TC 1 Verify Adding Products to Cart">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: tablet TC 2 Verify Product Details in Cart" time="1.043" classname="TC 2 Verify Product Details in Cart">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: tablet TC 3. Verify Removing Products from Cart" time="1.194" classname="TC 3. Verify Removing Products from Cart">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: tablet TC 4 Verify Cart Count Badge" time="1.491" classname="TC 4 Verify Cart Count Badge">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: tablet TC 5 Verify Checkout Process" time="1.031" classname="TC 5 Verify Checkout Process">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: tablet TC 6 Verify Returning to the List of Products from Cart" time="0.971" classname="TC 6 Verify Returning to the List of Products from Cart">
+    </testcase>
+  </testsuite>
+  <testsuite name="Viewport: desktop" timestamp="2024-07-04T12:35:04" tests="6" time="7.323" failures="0">
+    <testcase name="Shopping Cart Functionality Viewport: desktop TC 1 Verify Adding Products to Cart" time="1.047" classname="TC 1 Verify Adding Products to Cart">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: desktop TC 2 Verify Product Details in Cart" time="1.075" classname="TC 2 Verify Product Details in Cart">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: desktop TC 3. Verify Removing Products from Cart" time="1.212" classname="TC 3. Verify Removing Products from Cart">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: desktop TC 4 Verify Cart Count Badge" time="1.770" classname="TC 4 Verify Cart Count Badge">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: desktop TC 5 Verify Checkout Process" time="1.064" classname="TC 5 Verify Checkout Process">
+    </testcase>
+    <testcase name="Shopping Cart Functionality Viewport: desktop TC 6 Verify Returning to the List of Products from Cart" time="0.968" classname="TC 6 Verify Returning to the List of Products from Cart">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="11.798" tests="22" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-07-04T12:30:39" tests="0" file="cypress\e2e\security.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Security" timestamp="2024-07-04T12:30:39" tests="22" time="11.793" failures="0">
+    <testcase name="Security TC 1 Verify Password Masking" time="0.815" classname="TC 1 Verify Password Masking">
+    </testcase>
+    <testcase name="Security TC 2 Verify Absence SQL Injection in Login" time="0.877" classname="TC 2 Verify Absence SQL Injection in Login">
+    </testcase>
+    <testcase name="Security TC 3 Verify Prevention of XSS Injection in Login " time="1.225" classname="TC 3 Verify Prevention of XSS Injection in Login ">
+    </testcase>
+    <testcase name="Security TC 4 Verify HTTPS in Login url" time="0.102" classname="TC 4 Verify HTTPS in Login url">
+    </testcase>
+    <testcase name="Security TC 5 Verify HTTPS for URL https://www.saucedemo.com/inventory.html" time="0.234" classname="TC 5 Verify HTTPS for URL https://www.saucedemo.com/inventory.html">
+    </testcase>
+    <testcase name="Security TC 6 Verify HTTPS for URL https://www.saucedemo.com/inventory-item.html?id=4" time="0.219" classname="TC 6 Verify HTTPS for URL https://www.saucedemo.com/inventory-item.html?id=4">
+    </testcase>
+    <testcase name="Security TC 7 Verify HTTPS for URL https://www.saucedemo.com/cart.html" time="0.231" classname="TC 7 Verify HTTPS for URL https://www.saucedemo.com/cart.html">
+    </testcase>
+    <testcase name="Security TC 8 Verify HTTPS for URL https://www.saucedemo.com/checkout-step-one.html" time="0.233" classname="TC 8 Verify HTTPS for URL https://www.saucedemo.com/checkout-step-one.html">
+    </testcase>
+    <testcase name="Security TC 9 Verify HTTPS for URL https://www.saucedemo.com/checkout-step-two.html" time="0.225" classname="TC 9 Verify HTTPS for URL https://www.saucedemo.com/checkout-step-two.html">
+    </testcase>
+    <testcase name="Security TC 10 Verify HTTPS for URL https://www.saucedemo.com/checkout-complete.html" time="0.240" classname="TC 10 Verify HTTPS for URL https://www.saucedemo.com/checkout-complete.html">
+    </testcase>
+    <testcase name="Security TC 11 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/inventory.html" time="0.122" classname="TC 11 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/inventory.html">
+    </testcase>
+    <testcase name="Security TC 12 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/inventory-item.html?id=4" time="0.133" classname="TC 12 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/inventory-item.html?id=4">
+    </testcase>
+    <testcase name="Security TC 13 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/cart.html" time="0.160" classname="TC 13 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/cart.html">
+    </testcase>
+    <testcase name="Security TC 14 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/checkout-step-one.html" time="0.124" classname="TC 14 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/checkout-step-one.html">
+    </testcase>
+    <testcase name="Security TC 15 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/checkout-step-two.html" time="0.137" classname="TC 15 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/checkout-step-two.html">
+    </testcase>
+    <testcase name="Security TC 16 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/checkout-complete.html" time="0.150" classname="TC 16 All Critical Pages Display an Access Denied Message when Bypassing Login for the URL https://www.saucedemo.com/checkout-complete.html">
+    </testcase>
+    <testcase name="Security TC 17 Check for a 404 Error for Invalid URL https://www.saucedemo.com/inventory.html" time="0.084" classname="TC 17 Check for a 404 Error for Invalid URL https://www.saucedemo.com/inventory.html">
+    </testcase>
+    <testcase name="Security TC 18 Check for a 404 Error for Invalid URL https://www.saucedemo.com/inventory-item.html?id=4" time="0.176" classname="TC 18 Check for a 404 Error for Invalid URL https://www.saucedemo.com/inventory-item.html?id=4">
+    </testcase>
+    <testcase name="Security TC 19 Check for a 404 Error for Invalid URL https://www.saucedemo.com/cart.html" time="0.071" classname="TC 19 Check for a 404 Error for Invalid URL https://www.saucedemo.com/cart.html">
+    </testcase>
+    <testcase name="Security TC 20 Check for a 404 Error for Invalid URL https://www.saucedemo.com/checkout-step-one.html" time="0.087" classname="TC 20 Check for a 404 Error for Invalid URL https://www.saucedemo.com/checkout-step-one.html">
+    </testcase>
+    <testcase name="Security TC 21 Check for a 404 Error for Invalid URL https://www.saucedemo.com/checkout-step-two.html" time="0.083" classname="TC 21 Check for a 404 Error for Invalid URL https://www.saucedemo.com/checkout-step-two.html">
+    </testcase>
+    <testcase name="Security TC 22 Check for a 404 Error for Invalid URL https://www.saucedemo.com/checkout-complete.html" time="0.180" classname="TC 22 Check for a 404 Error for Invalid URL https://www.saucedemo.com/checkout-complete.html">
+    </testcase>
+  </testsuite>
+</testsuites>

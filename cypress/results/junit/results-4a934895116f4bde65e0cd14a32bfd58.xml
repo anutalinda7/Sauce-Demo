@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="25.658" tests="30" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-07-04T12:37:20" tests="0" file="cypress\e2e\userLoginFunctionality.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="User Login Functionality" timestamp="2024-07-04T12:37:20" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Viewport: mobile" timestamp="2024-07-04T12:37:20" tests="10" time="10.689" failures="0">
+    <testcase name="User Login Functionality Viewport: mobile TC 1: Successful Login" time="1.302" classname="TC 1: Successful Login">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: mobile TC 2: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="1.188" classname="TC 2: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: mobile TC 3: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.783" classname="TC 3: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: mobile TC 4: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.731" classname="TC 4: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: mobile TC 5: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.765" classname="TC 5: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: mobile TC 6: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.473" classname="TC 6: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: mobile TC 7: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.496" classname="TC 7: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: mobile TC 8: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.209" classname="TC 8: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: mobile TC 9: Verify Correct Logout" time="0.915" classname="TC 9: Verify Correct Logout">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: mobile TC 10: Check the Disabled Error Message Using the Delete Icon" time="0.896" classname="TC 10: Check the Disabled Error Message Using the Delete Icon">
+    </testcase>
+  </testsuite>
+  <testsuite name="Viewport: tablet" timestamp="2024-07-04T12:37:30" tests="10" time="7.028" failures="0">
+    <testcase name="User Login Functionality Viewport: tablet TC 1: Successful Login" time="0.798" classname="TC 1: Successful Login">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: tablet TC 2: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.795" classname="TC 2: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: tablet TC 3: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.767" classname="TC 3: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: tablet TC 4: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.727" classname="TC 4: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: tablet TC 5: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.746" classname="TC 5: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: tablet TC 6: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.502" classname="TC 6: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: tablet TC 7: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.489" classname="TC 7: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: tablet TC 8: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.197" classname="TC 8: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: tablet TC 9: Verify Correct Logout" time="0.919" classname="TC 9: Verify Correct Logout">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: tablet TC 10: Check the Disabled Error Message Using the Delete Icon" time="0.833" classname="TC 10: Check the Disabled Error Message Using the Delete Icon">
+    </testcase>
+  </testsuite>
+  <testsuite name="Viewport: desktop" timestamp="2024-07-04T12:37:37" tests="10" time="7.933" failures="0">
+    <testcase name="User Login Functionality Viewport: desktop TC 1: Successful Login" time="0.801" classname="TC 1: Successful Login">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: desktop TC 2: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.823" classname="TC 2: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: desktop TC 3: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.748" classname="TC 3: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: desktop TC 4: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.731" classname="TC 4: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: desktop TC 5: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.709" classname="TC 5: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: desktop TC 6: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.491" classname="TC 6: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: desktop TC 7: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="1.408" classname="TC 7: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: desktop TC 8: Login with Locked Out User, Invalid User, or Empty Information and Check the Message" time="0.176" classname="TC 8: Login with Locked Out User, Invalid User, or Empty Information and Check the Message">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: desktop TC 9: Verify Correct Logout" time="0.927" classname="TC 9: Verify Correct Logout">
+    </testcase>
+    <testcase name="User Login Functionality Viewport: desktop TC 10: Check the Disabled Error Message Using the Delete Icon" time="0.852" classname="TC 10: Check the Disabled Error Message Using the Delete Icon">
+    </testcase>
+  </testsuite>
+</testsuites>

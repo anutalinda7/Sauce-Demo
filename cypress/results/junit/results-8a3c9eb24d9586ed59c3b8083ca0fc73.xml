@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="69.036" tests="36" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-07-04T12:35:16" tests="0" file="cypress\e2e\checkoutProcess.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Checkout Process" timestamp="2024-07-04T12:35:16" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Viewport: mobile" timestamp="2024-07-04T12:35:16" tests="12" time="27.853" failures="0">
+    <testcase name="Checkout Process Viewport: mobile TC 1 Verify Complete the Checkout Process and Place an Order" time="3.025" classname="TC 1 Verify Complete the Checkout Process and Place an Order">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 2 Verify Price Calculation and Tax" time="2.373" classname="TC 2 Verify Price Calculation and Tax">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 3 Checkout with incomplete Information" time="1.753" classname="TC 3 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 4 Checkout with incomplete Information" time="1.625" classname="TC 4 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 5 Checkout with incomplete Information" time="1.685" classname="TC 5 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 6 Checkout with incomplete Information" time="1.379" classname="TC 6 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 7 Checkout with incomplete Information" time="1.480" classname="TC 7 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 8 Checkout with incomplete Information" time="1.359" classname="TC 8 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 9 Checkout with incomplete Information" time="1.124" classname="TC 9 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 10 Cancel Checkout from the Checkout: Your Information Page" time="1.112" classname="TC 10 Cancel Checkout from the Checkout: Your Information Page">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 11 Cancel Checkout from the Checkout: Overview Page" time="5.136" classname="TC 11 Cancel Checkout from the Checkout: Overview Page">
+    </testcase>
+    <testcase name="Checkout Process Viewport: mobile TC 12 Go Back Home After Order" time="2.522" classname="TC 12 Go Back Home After Order">
+    </testcase>
+  </testsuite>
+  <testsuite name="Viewport: tablet" timestamp="2024-07-04T12:35:44" tests="12" time="20.478" failures="0">
+    <testcase name="Checkout Process Viewport: tablet TC 1 Verify Complete the Checkout Process and Place an Order" time="2.160" classname="TC 1 Verify Complete the Checkout Process and Place an Order">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 2 Verify Price Calculation and Tax" time="2.140" classname="TC 2 Verify Price Calculation and Tax">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 3 Checkout with incomplete Information" time="1.747" classname="TC 3 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 4 Checkout with incomplete Information" time="1.601" classname="TC 4 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 5 Checkout with incomplete Information" time="1.721" classname="TC 5 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 6 Checkout with incomplete Information" time="1.415" classname="TC 6 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 7 Checkout with incomplete Information" time="1.431" classname="TC 7 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 8 Checkout with incomplete Information" time="1.344" classname="TC 8 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 9 Checkout with incomplete Information" time="1.147" classname="TC 9 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 10 Cancel Checkout from the Checkout: Your Information Page" time="1.150" classname="TC 10 Cancel Checkout from the Checkout: Your Information Page">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 11 Cancel Checkout from the Checkout: Overview Page" time="2.111" classname="TC 11 Cancel Checkout from the Checkout: Overview Page">
+    </testcase>
+    <testcase name="Checkout Process Viewport: tablet TC 12 Go Back Home After Order" time="2.177" classname="TC 12 Go Back Home After Order">
+    </testcase>
+  </testsuite>
+  <testsuite name="Viewport: desktop" timestamp="2024-07-04T12:36:05" tests="12" time="20.699" failures="0">
+    <testcase name="Checkout Process Viewport: desktop TC 1 Verify Complete the Checkout Process and Place an Order" time="2.196" classname="TC 1 Verify Complete the Checkout Process and Place an Order">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 2 Verify Price Calculation and Tax" time="2.114" classname="TC 2 Verify Price Calculation and Tax">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 3 Checkout with incomplete Information" time="1.694" classname="TC 3 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 4 Checkout with incomplete Information" time="2.051" classname="TC 4 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 5 Checkout with incomplete Information" time="1.646" classname="TC 5 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 6 Checkout with incomplete Information" time="1.371" classname="TC 6 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 7 Checkout with incomplete Information" time="1.550" classname="TC 7 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 8 Checkout with incomplete Information" time="1.353" classname="TC 8 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 9 Checkout with incomplete Information" time="1.120" classname="TC 9 Checkout with incomplete Information">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 10 Cancel Checkout from the Checkout: Your Information Page" time="1.116" classname="TC 10 Cancel Checkout from the Checkout: Your Information Page">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 11 Cancel Checkout from the Checkout: Overview Page" time="2.024" classname="TC 11 Cancel Checkout from the Checkout: Overview Page">
+    </testcase>
+    <testcase name="Checkout Process Viewport: desktop TC 12 Go Back Home After Order" time="2.126" classname="TC 12 Go Back Home After Order">
+    </testcase>
+  </testsuite>
+</testsuites>

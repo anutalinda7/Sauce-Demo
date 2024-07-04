@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "open": "npx cypress open",
+    "test": "npx cypress run",
+    "chrome": "npx cypress run --browser chrome ",
+    "electron": "npx cypress run --browser electron ",
+    "edge": "npx cypress run --browser edge ",
+    "chrome-headed": "npx cypress run --browser chrome --headed",
+    "electron-headed": "npx cypress run --browser electron --headed",
+    "edge-headed": "npx cypress run --browser edge --headed",
+    "delete:reports": "rm -rf cypress/results/*",
+    "prereport": "npm run delete:reports",
+    "clean:mochawesome": "rm -rf mochawesome-report/assets mochawesome-report/mochawesome.html",
+    "mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json",
+    "mochawesome:html": "npx marge mochawesome.json",
+    "spec": "npm run chrome --spec 'cypress/e2e/security.cy.js' --headed",
+    "allBrowsers": "npm run chrome && npm run electron && npm run edge",
+    "allBrowsersHeaded": "npm run chrome-headed && npm run electron-headed && npm run edge-headed",
+    "allTestsWithReport": "npm run delete:reports && npm run clean:mochawesome && npm run allBrowsers && npm run mochawesome:merge && npm run mochawesome:html"
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^1.1.5",
+    "@eslint/js": "^9.6.0",
+    "@faker-js/faker": "^8.4.1",
+    "cypress": "^13.13.0",
+    "cypress-multi-reporters": "^1.6.4",
+    "globals": "^15.8.0",
+    "mocha-junit-reporter": "^2.2.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

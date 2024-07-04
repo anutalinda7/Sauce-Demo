@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="30.377" tests="27" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-07-04T12:30:03" tests="0" file="cypress\e2e\productBrowsingAndSelection.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Product Browsing and Selection" timestamp="2024-07-04T12:30:03" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Viewport: mobile" timestamp="2024-07-04T12:30:03" tests="9" time="13.120" failures="0">
+    <testcase name="Product Browsing and Selection Viewport: mobile TC 1 Verify the Number of Products Listed and Compare with the Expected Count" time="1.797" classname="TC 1 Verify the Number of Products Listed and Compare with the Expected Count">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: mobile TC 2 Verify Product List" time="0.966" classname="TC 2 Verify Product List">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: mobile TC 3 Ensure the Products are Correctly Categorized" time="1.001" classname="TC 3 Ensure the Products are Correctly Categorized">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: mobile TC 4 Validate Sorting Functionality" time="0.914" classname="TC 4 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: mobile TC 5 Validate Sorting Functionality" time="0.909" classname="TC 5 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: mobile TC 6 Validate Sorting Functionality" time="1.143" classname="TC 6 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: mobile TC 7 Validate Sorting Functionality" time="0.921" classname="TC 7 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: mobile TC 8 Check Product Details" time="1.046" classname="TC 8 Check Product Details">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: mobile TC 9 Test Navigation" time="1.253" classname="TC 9 Test Navigation">
+    </testcase>
+  </testsuite>
+  <testsuite name="Viewport: tablet" timestamp="2024-07-04T12:30:16" tests="9" time="8.666" failures="0">
+    <testcase name="Product Browsing and Selection Viewport: tablet TC 1 Verify the Number of Products Listed and Compare with the Expected Count" time="0.769" classname="TC 1 Verify the Number of Products Listed and Compare with the Expected Count">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: tablet TC 2 Verify Product List" time="0.817" classname="TC 2 Verify Product List">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: tablet TC 3 Ensure the Products are Correctly Categorized" time="0.816" classname="TC 3 Ensure the Products are Correctly Categorized">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: tablet TC 4 Validate Sorting Functionality" time="0.902" classname="TC 4 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: tablet TC 5 Validate Sorting Functionality" time="0.925" classname="TC 5 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: tablet TC 6 Validate Sorting Functionality" time="0.940" classname="TC 6 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: tablet TC 7 Validate Sorting Functionality" time="0.911" classname="TC 7 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: tablet TC 8 Check Product Details" time="1.038" classname="TC 8 Check Product Details">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: tablet TC 9 Test Navigation" time="1.322" classname="TC 9 Test Navigation">
+    </testcase>
+  </testsuite>
+  <testsuite name="Viewport: desktop" timestamp="2024-07-04T12:30:25" tests="9" time="8.582" failures="0">
+    <testcase name="Product Browsing and Selection Viewport: desktop TC 1 Verify the Number of Products Listed and Compare with the Expected Count" time="0.786" classname="TC 1 Verify the Number of Products Listed and Compare with the Expected Count">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: desktop TC 2 Verify Product List" time="0.846" classname="TC 2 Verify Product List">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: desktop TC 3 Ensure the Products are Correctly Categorized" time="0.781" classname="TC 3 Ensure the Products are Correctly Categorized">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: desktop TC 4 Validate Sorting Functionality" time="0.917" classname="TC 4 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: desktop TC 5 Validate Sorting Functionality" time="0.912" classname="TC 5 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: desktop TC 6 Validate Sorting Functionality" time="0.938" classname="TC 6 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: desktop TC 7 Validate Sorting Functionality" time="0.913" classname="TC 7 Validate Sorting Functionality">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: desktop TC 8 Check Product Details" time="1.014" classname="TC 8 Check Product Details">
+    </testcase>
+    <testcase name="Product Browsing and Selection Viewport: desktop TC 9 Test Navigation" time="1.224" classname="TC 9 Test Navigation">
+    </testcase>
+  </testsuite>
+</testsuites>
