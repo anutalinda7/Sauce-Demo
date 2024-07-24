@@ -14,7 +14,7 @@ module.exports = defineConfig({
     configFile: 'reporter-config.json',
   },
   retries: {
-    runMode: 2,
-    openMode: 2
+    runMode: 0,
+    openMode: 0
   },
 });

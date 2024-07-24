@@ -1,4 +1,4 @@
-import data from "../support/pageObject/dataPage.js";  
+import data from "../support/dataPage.js";  
 import {
     addBackpackToCart,
     addBikeToCart,
@@ -19,7 +19,7 @@ import {
     verifyEmptyCartList,
     verifyContainsVisibility,
     goBackToContinueShopping
-  } from '../support/pageObject/functionsPage.js';
+  } from '../support/functionsPage.js';
 
 describe('Shopping Cart Functionality', () => {
   data.viewports.forEach(viewport => {

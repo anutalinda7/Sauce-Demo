@@ -1,5 +1,5 @@
-import data from "../support/pageObject/dataPage.js";  
-import { clickMenuBtn, deleteAndVerifyErrMsg, login, logoutAndVerify, verifyContainsVisibility, verifyErrorMsg } from '../support/pageObject/functionsPage.js';
+import data from "../support/dataPage.js";  
+import { clickMenuBtn, deleteAndVerifyErrMsg, login, logoutAndVerify, verifyContainsVisibility, verifyErrorMsg } from '../support/functionsPage.js';
 
 const loginData = [
   { usr: data.lockedOutUsr, pwd: data.validPwd, err: data.msgRequiredLockedUsr },

@@ -1,5 +1,5 @@
-import data from "../support/pageObject/dataPage.js";
-import selector from "../support/pageObject/selectorsPage.js";
+import data from "../support/dataPage.js";  
+import selector from "../support/selectorsPage.js";
 import {
   addBackpackAndBikeToCart,
   addBackpackToCart,
@@ -15,7 +15,7 @@ import {
   verifyDetailInformationAboutAddProducts,
   verifyProductDetails,
   visitSauceDemoInventoryPage
-} from '../support/pageObject/functionsPage.js';
+} from '../support/functionsPage.js';
 
 const itemsPrice = [
   parseFloat(data.productsPrice[0]),

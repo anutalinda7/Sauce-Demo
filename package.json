@@ -16,7 +16,7 @@
     "spec": "npm run chrome --spec 'cypress/e2e/security.cy.js' --headed",
     "allBrowsers": "npm run chrome && npm run electron && npm run edge",
     "allBrowsersHeaded": "npm run chrome-headed && npm run electron-headed && npm run edge-headed",
-    "allTestsWithReport": "npm run delete:reports && npm run clean:mochawesome && npm run allBrowsers && npm run mochawesome:merge && npm run mochawesome:html"
+    "allTestsWithReports": "npm run delete:reports && npm run clean:mochawesome && npm run allBrowsers && npm run mochawesome:merge && npm run mochawesome:html"
   },
   "devDependencies": {
     "@eslint/create-config": "^1.1.5",

@@ -1,6 +1,6 @@
-import data from "../support/pageObject/dataPage.js";  
-import selector from "../support/pageObject/selectorsPage.js";  
-import { login, typePassword, verifyContainsVisibility, verifyErrorMsg, verifyPwdMasking } from '../support/pageObject/functionsPage.js';
+import data from "../support/dataPage.js";  
+import selector from "../support/selectorsPage.js";  
+import { login, typePassword, verifyContainsVisibility, verifyErrorMsg, verifyPwdMasking } from '../support/functionsPage.js';
 
 const urls = [
     'https://www.saucedemo.com/inventory.html',
