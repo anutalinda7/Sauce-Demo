@@ -8,20 +8,16 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //
-//
+Cypress.Commands.add("visitSauceDemo", () => {
+    cy.visit('https://www.saucedemo.com');
+})
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-Cypress.Commands.add("visitSauceDemo", () => {
-    cy.visit('https://www.saucedemo.com');
-})
-
-Cypress.Commands.add('getBySel', (selector, ...args) => {
-    return cy.get(`[data-test=${selector}]`, ...args)
-})
+//
 //
 // -- This is a dual command --
 // Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })

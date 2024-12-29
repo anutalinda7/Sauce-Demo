@@ -1,5 +1,5 @@
-import data from "../support/dataPage.js";  
-import { clickMenuBtn, deleteAndVerifyErrMsg, login, logoutAndVerify, verifyContainsVisibility, verifyErrorMsg } from '../support/functionsPage.js';
+import { LoginPage } from "../pageObject/loginPage"
+import data from "../support/testData"
 
 const loginData = [
   { usr: data.lockedOutUsr, pwd: data.validPwd, err: data.msgRequiredLockedUsr },
@@ -11,7 +11,9 @@ const loginData = [
   { usr: undefined, pwd: undefined, err: data.msgRequiredUsr }
 ];
 
-describe('User Login Functionality', () => {
+describe('Product purchase', () => {
+  const loginPage = new LoginPage();
+
   data.viewports.forEach(viewport => {
     context(`Viewport: ${viewport.device}`, () => {
       let testCaseNr = 1;
@@ -21,27 +23,27 @@ describe('User Login Functionality', () => {
       });
 
       it(`TC ${testCaseNr++}: Successful Login`, () => {
-        login(data.validUsr, data.validPwd);
-        verifyContainsVisibility(data.labelProducts);  
+        loginPage.login(data.validUsr, data.validPwd);
+        loginPage.verifyContainsVisibility(data.labelProducts);  
       });
 
       loginData.forEach(({ usr, pwd, err }) => {
         it(`TC ${testCaseNr++}: Login with Locked Out User, Invalid User, or Empty Information and Check the Message`, () => {
-          login(usr, pwd); 
-          verifyErrorMsg(err);
+          loginPage.login(usr, pwd); 
+          loginPage.verifyErrorMsg(err);
         }); 
       });
 
       it(`TC ${testCaseNr++}: Verify Correct Logout`, () => {
-        login(data.validUsr, data.validPwd);
-        clickMenuBtn();
-        logoutAndVerify();
+        loginPage.login(data.validUsr, data.validPwd);
+        loginPage.clickMenuBtn();
+        loginPage.logoutAndVerify();
       });
 
       it(`TC ${testCaseNr++}: Check the Disabled Error Message Using the Delete Icon`, () => {
-        login(data.invalidUsr, data.validPwd);  
-        verifyErrorMsg(data.msgWrongLoginData);
-        deleteAndVerifyErrMsg();
+        loginPage.login(data.invalidUsr, data.validPwd);  
+        loginPage.verifyErrorMsg(data.msgWrongLoginData);
+        loginPage.deleteAndVerifyErrMsg();
       });
     });
   });

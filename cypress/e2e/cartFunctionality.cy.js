@@ -1,27 +1,11 @@
-import data from "../support/dataPage.js";  
-import {
-    addBackpackToCart,
-    addBikeToCart,
-    clickAllItemsSidebar,
-    clickMenuBtn,
-    goToCart,
-    removeBackpackFromCart,
-    removeBikeFromCart,
-    verifyProductsListLength,
-    verifyProductDetails,
-    visitSauceDemoInventoryPage,
-    verifyProductQuantityInCart,
-    verifyBadgeQuantity,
-    goToFirstCheckoutPage,
-    verifyDetailInformationAboutAddProducts,
-    addBackpackAndBikeToCart,
-    verifyEmptyCartBadge,
-    verifyEmptyCartList,
-    verifyContainsVisibility,
-    goBackToContinueShopping
-  } from '../support/functionsPage.js';
+import { LoginPage } from "../pageObject/loginPage"
+import { CartFunctionality } from "../pageObject/cartFunctionalityPage"
+import data from "../support/testData"
 
 describe('Shopping Cart Functionality', () => {
+  const loginPage = new LoginPage();
+  const cartFunctionality = new CartFunctionality();
+
   data.viewports.forEach(viewport => {
     context(`Viewport: ${viewport.device}`, () => {
       let testCaseNr = 1;
@@ -29,14 +13,14 @@ describe('Shopping Cart Functionality', () => {
       beforeEach(() => {
         cy.viewport(viewport.width, viewport.height);
         cy.visitSauceDemo();
-        visitSauceDemoInventoryPage(data.validUsr, data.validPwd); 
+        loginPage.visitSauceDemoInventoryPage(data.validUsr, data.validPwd); 
       });
 
       it(`TC ${testCaseNr++} Verify Adding Products to Cart`, () => {
-        addBackpackAndBikeToCart(data.remove);
-        goToCart();
-        verifyProductDetails();
-        verifyDetailInformationAboutAddProducts(
+        cartFunctionality.addBackpackAndBikeToCart(data.remove);
+        cartFunctionality.goToCart();
+        cartFunctionality.verifyProductDetails();
+        cartFunctionality.verifyDetailInformationAboutAddProducts(
           data.orderOfProducts[0], 
           data.orderOfProducts[1],
           data.productsPrice[0],
@@ -45,47 +29,49 @@ describe('Shopping Cart Functionality', () => {
       });
 
       it(`TC ${testCaseNr++} Verify Product Details in Cart`, () => {
-        addBackpackAndBikeToCart(data.remove);
-        goToCart();
-        verifyProductsListLength(2);
-        verifyProductQuantityInCart(1);
+        cartFunctionality.addBackpackAndBikeToCart(data.remove);
+        cartFunctionality.goToCart();
+        cartFunctionality.verifyProductsListLength(2);
+        cartFunctionality.verifyProductQuantityInCart(1);
       });
     
       it(`TC ${testCaseNr++}. Verify Removing Products from Cart`, () => {
-        addBackpackAndBikeToCart(data.remove);
-        goToCart();
-        removeBackpackFromCart();
-        verifyProductsListLength(1);
-        removeBikeFromCart();
-        verifyEmptyCartList();
+        cartFunctionality.addBackpackAndBikeToCart(data.remove);
+        cartFunctionality.goToCart();
+        cartFunctionality.removeBackpackFromCart();
+        cartFunctionality.verifyProductsListLength(1);
+        cartFunctionality.removeBikeFromCart();
+        cartFunctionality.verifyEmptyCartList();
       });
 
       it(`TC ${testCaseNr++} Verify Cart Count Badge`, () => {
-        addBackpackToCart(data.remove);
-        goToCart();
-        verifyBadgeQuantity(1);
-        clickMenuBtn();
-        clickAllItemsSidebar();
-        addBikeToCart(data.remove);
-        goToCart();
-        verifyBadgeQuantity(2);
-        removeBackpackFromCart();
-        verifyBadgeQuantity(1);
-        removeBikeFromCart();
-        verifyEmptyCartBadge();
+        cartFunctionality.addBackpackToCart(data.remove);
+        cartFunctionality.goToCart();
+        cartFunctionality.verifyBadgeQuantity(1);
+        cartFunctionality.clickMenuBtn();
+        cartFunctionality.clickAllItemsSidebar();
+        cartFunctionality.addBikeToCart(data.remove);
+        cartFunctionality.goToCart();
+        cartFunctionality.verifyBadgeQuantity(2);
+        cartFunctionality.removeBackpackFromCart();
+        cartFunctionality.verifyBadgeQuantity(1);
+        cartFunctionality.removeBikeFromCart();
+        cartFunctionality.verifyEmptyCartBadge();
       });
     
       it(`TC ${testCaseNr++} Verify Checkout Process`, () => {
-        addBackpackToCart(data.remove);
-        goToCart();
-        goToFirstCheckoutPage();
-        verifyContainsVisibility(data.titleYourInformation);
+        cartFunctionality.addBackpackToCart(data.remove);
+        cartFunctionality.goToCart();
+        cartFunctionality.goToFirstCheckoutPage();
+        cartFunctionality.verifyContainsVisibility(data.titleYourInformation);
       });
 
       it(`TC ${testCaseNr++} Verify Returning to the List of Products from Cart`, () => {
-        goToCart();
-        goBackToContinueShopping();
+        cartFunctionality.goToCart();
+        cartFunctionality.goBackToContinueShopping();
       });
     });
   });
 });
+
+

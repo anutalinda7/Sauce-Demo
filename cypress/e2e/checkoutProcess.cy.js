@@ -1,21 +1,7 @@
-import data from "../support/dataPage.js";  
-import selector from "../support/selectorsPage.js";
-import {
-  addBackpackAndBikeToCart,
-  addBackpackToCart,
-  clickCancelCheckoutBtn,
-  clickContinueBtnCheckoutPage,
-  fillYourInformation,
-  fillYourInformationAndCheckError,
-  goBackToHomePage,
-  goToCart,
-  goToFinishCheckoutPage,
-  goToFirstCheckoutPage,
-  verifyContainsVisibility,
-  verifyDetailInformationAboutAddProducts,
-  verifyProductDetails,
-  visitSauceDemoInventoryPage
-} from '../support/functionsPage.js';
+import { LoginPage } from "../pageObject/loginPage"
+import { CheckoutProcess } from "../pageObject/checkoutPage"
+import data from "../support/testData"
+
 
 const itemsPrice = [
   parseFloat(data.productsPrice[0]),
@@ -37,6 +23,9 @@ const incompleteInfoTests = [
 ];
 
 describe('Checkout Process', () => {
+  const loginPage = new LoginPage();
+  const checkoutProcess = new CheckoutProcess();
+
   data.viewports.forEach(viewport => {
     context(`Viewport: ${viewport.device}`, () => {
       let testCaseNumber = 1;
@@ -44,74 +33,91 @@ describe('Checkout Process', () => {
       beforeEach(() => {
         cy.viewport(viewport.width, viewport.height);
         cy.visitSauceDemo();
-        visitSauceDemoInventoryPage(data.validUsr, data.validPwd);
+        loginPage.visitSauceDemoInventoryPage(data.validUsr, data.validPwd);
       });
 
       it(`TC ${testCaseNumber++} Verify Complete the Checkout Process and Place an Order`, () => {
-        addBackpackAndBikeToCart(data.remove);
-        goToCart();
-        goToFirstCheckoutPage();
-        fillYourInformation(data.fn, data.ln, data.zc);
-        clickContinueBtnCheckoutPage();
-        verifyProductDetails();
-        goToFinishCheckoutPage();
-        verifyContainsVisibility(data.msgThankYouForOrder);
+        checkoutProcess.addBackpackAndBikeToCart(data.remove);
+        checkoutProcess.goToCart();
+        checkoutProcess.goToFirstCheckoutPage();
+        checkoutProcess.fillYourInformation(data.fn, data.ln, data.zc);
+        checkoutProcess.clickContinueBtnCheckoutPage();
+        checkoutProcess.verifyProductDetails();
+        checkoutProcess.goToFinishCheckoutPage();
+        checkoutProcess.verifyContainsVisibility(data.msgThankYouForOrder);
       });
 
       it(`TC ${testCaseNumber++} Verify Price Calculation and Tax`, () => {
-        addBackpackAndBikeToCart(data.remove);
-        goToCart();
-        goToFirstCheckoutPage();
-        fillYourInformation(data.fn, data.ln, data.zc);
-        clickContinueBtnCheckoutPage();
-        verifyDetailInformationAboutAddProducts(
+        checkoutProcess.addBackpackAndBikeToCart(data.remove);
+        checkoutProcess.goToCart();
+        checkoutProcess.goToFirstCheckoutPage();
+        checkoutProcess.fillYourInformation(data.fn, data.ln, data.zc);
+        checkoutProcess.clickContinueBtnCheckoutPage();
+        checkoutProcess.verifyDetailInformationAboutAddProducts(
           data.orderOfProducts[0],
           data.orderOfProducts[1],
           data.productsPrice[0],
           data.productsPrice[1]
         );
-        cy.getBySel(selector.itemsTotalPrice).should('have.text', `Item total: $${totalItemPrice.toFixed(2)}`);
-        cy.getBySel(selector.tax).should('have.text', `Tax: $${expectedTax.toFixed(2)}`);
-        cy.getBySel(selector.totalPriceWithTax).should('have.text', `Total: $${totalPrice.toFixed(2)}`);
-        goToFinishCheckoutPage();
+        checkoutProcess.getElement(checkoutProcess.itemsTotalPrice).should('have.text', `Item total: $${totalItemPrice.toFixed(2)}`);
+        checkoutProcess.getElement(checkoutProcess.tax).should('have.text', `Tax: $${expectedTax.toFixed(2)}`);
+        checkoutProcess.getElement(checkoutProcess.totalPriceWithTax).should('have.text', `Total: $${totalPrice.toFixed(2)}`);
+        checkoutProcess.goToFinishCheckoutPage();
       });
 
       incompleteInfoTests.forEach(({ fn, ln, zc, err }) => {
         it(`TC ${testCaseNumber++} Checkout with incomplete Information`, () => {
-          addBackpackToCart(data.remove);
-          goToCart();
-          goToFirstCheckoutPage();
-          fillYourInformationAndCheckError(fn, ln, zc, err);
+          checkoutProcess.addBackpackToCart(data.remove);
+          checkoutProcess.goToCart();
+          checkoutProcess.goToFirstCheckoutPage();
+          checkoutProcess.fillYourInformationAndCheckError(fn, ln, zc, err);
         });
       });
 
       it(`TC ${testCaseNumber++} Cancel Checkout from the Checkout: Your Information Page`, () => {
-        addBackpackToCart(data.remove);
-        goToCart();
-        goToFirstCheckoutPage();
-        clickCancelCheckoutBtn();
+        checkoutProcess.addBackpackToCart(data.remove);
+        checkoutProcess.goToCart();
+        checkoutProcess.goToFirstCheckoutPage();
+        checkoutProcess.clickCancelCheckoutBtn();
         cy.url().should('include', '/cart.html');
       });
 
       it(`TC ${testCaseNumber++} Cancel Checkout from the Checkout: Overview Page`, () => {
-        addBackpackToCart(data.remove);
-        goToCart();
-        goToFirstCheckoutPage();
-        fillYourInformation(data.fn, data.ln, data.zc);
-        clickContinueBtnCheckoutPage();
-        clickCancelCheckoutBtn();
+        checkoutProcess.addBackpackToCart(data.remove);
+        checkoutProcess.goToCart();
+        checkoutProcess.goToFirstCheckoutPage();
+        checkoutProcess.fillYourInformation(data.fn, data.ln, data.zc);
+        checkoutProcess.clickContinueBtnCheckoutPage();
+        checkoutProcess.clickCancelCheckoutBtn();
         cy.url().should('include', '/inventory.html');
       });
 
       it(`TC ${testCaseNumber++} Go Back Home After Order`, () => {
-        addBackpackToCart(data.remove);
-        goToCart();
-        goToFirstCheckoutPage();
-        fillYourInformation(data.fn, data.ln, data.zc);
-        clickContinueBtnCheckoutPage();
-        goToFinishCheckoutPage();
-        goBackToHomePage();
+        checkoutProcess.addBackpackToCart(data.remove);
+        checkoutProcess.goToCart();
+        checkoutProcess.goToFirstCheckoutPage();
+        checkoutProcess.fillYourInformation(data.fn, data.ln, data.zc);
+        checkoutProcess.clickContinueBtnCheckoutPage();
+        checkoutProcess.goToFinishCheckoutPage();
+        checkoutProcess.goBackToHomePage();
       });
     });
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
